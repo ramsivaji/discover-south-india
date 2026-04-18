@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andhra Pradesh — Explore 12 Stunning Destinations | South India Tourism</title>
+  <meta name="description" content="Discover 12 breathtaking destinations in Andhra Pradesh — from the divine hills of Tirupati to the Grand Canyon of India at Gandikota. Explore heritage, nature, and legendary Andhra cuisine." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-globe-asia-australia"></i> South India
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="andhra-pradesh.html">Andhra Pradesh</a></li>
+          <li class="nav-item"><a class="nav-link" href="telangana.html">Telangana</a></li>
+          <li class="nav-item"><a class="nav-link" href="#food-section">Local Food</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== STATE HERO ===== -->
+  <section class="state-hero" id="ap-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1" style="background: #1a4d2e;"></div>
+      <div class="hero-orb hero-orb-2" style="background: #FF6B35;"></div>
+      <div class="hero-orb hero-orb-3" style="background: #FFD700; opacity: 0.15;"></div>
+    </div>
+    <div class="container">
+      <div class="state-hero-content">
+        <div class="hero-badge">🕉️ The Land of Devotion & Spice</div>
+        <h1 class="state-hero-title">
+          Andhra <span class="gradient-text">Pradesh</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 700px;">
+          From the sacred seven hills of Tirumala to the awe-inspiring Grand Canyon of India — explore ancient temples, mystical caves, pristine beaches, and the spiciest cuisine that sets your soul on fire.
+        </p>
+        <div class="state-hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Destinations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Local Foods</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Memories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS SECTION ===== -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Top Destinations</span>
+        <h2 class="section-title">Explore <span>Andhra Pradesh</span></h2>
+        <p class="section-subtitle">
+          Discover 12 incredible destinations — from divine hilltop temples to breathtaking natural wonders.
+        </p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container reveal">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search destinations..." />
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pilgrimage">Pilgrimage</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+        <button class="filter-btn" data-filter="hill station">Hill Station</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="backwaters">Backwaters</button>
+      </div>
+
+      <!-- Place Cards Grid -->
+      <div class="row g-4" id="placesGrid">
+
+        <!-- 1. Tirupati -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Tirupati Tirumala Temple" data-category="pilgrimage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #e2725b 50%, #FFD700 100%);">
+                <i class="bi bi-building" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Pilgrimage</span>
+              <span class="place-card-price">Free (₹300 special)</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Tirupati — Tirumala Temple</h3>
+              <p class="place-card-desc">
+                The richest and most visited temple in the world, perched atop seven sacred hills. Lord Venkateswara's abode attracts 50,000+ pilgrims daily for divine darshan.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Tirupati</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Sep — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free / ₹300</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="13.6833" data-map-lng="79.3474" data-map-name="Tirumala Temple, Tirupati">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=13.6833,79.3474" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Visakhapatnam -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Visakhapatnam Vizag Beach" data-category="beach">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #90e0ef 100%);">
+                <i class="bi bi-water" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Beach & Hills</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Visakhapatnam (Vizag)</h3>
+              <p class="place-card-desc">
+                The jewel of the East Coast — stunning RK Beach, hilltop Kailasagiri with its towering Shiva-Parvati statues, submarine museum, and the gateway to Araku Valley.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Vizag</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.7231" data-map-lng="83.3013" data-map-name="RK Beach, Visakhapatnam">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.7231,83.3013" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Araku Valley -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Araku Valley Hill Station" data-category="hill station">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #2d6a4f 0%, #40916c 50%, #95d5b2 100%);">
+                <i class="bi bi-tree" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Hill Station</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Araku Valley</h3>
+              <p class="place-card-desc">
+                A breathtaking hill station cradled in the Eastern Ghats. Famous for its coffee plantations, tribal culture, scenic train ride, and the stunning Borra Caves nearby.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Araku</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="18.3273" data-map-lng="82.8757" data-map-name="Araku Valley">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=18.3273,82.8757" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Lepakshi -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Lepakshi Heritage Temple" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #5c4033 0%, #c77d4a 50%, #f0c27f 100%);">
+                <i class="bi bi-building" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Lepakshi</h3>
+              <p class="place-card-desc">
+                Home to the magnificent Veerabhadra Temple with its iconic hanging pillar that defies gravity, stunning Vijayanagara-era murals, and a colossal Nandi bull carved from a single rock.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Anantapur</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="15.9833" data-map-lng="77.6069" data-map-name="Lepakshi Temple">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=15.9833,77.6069" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Srisailam -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Srisailam Mallikarjuna Temple" data-category="pilgrimage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #1a4d2e 0%, #3a7d5e 50%, #FFD700 100%);">
+                <i class="bi bi-stars" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Pilgrimage & Nature</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Srisailam</h3>
+              <p class="place-card-desc">
+                One of the 12 Jyotirlingas — the sacred Mallikarjuna Temple sits in the dense Nallamala forests. The Srisailam Dam, Patala Ganga, and Akka Mahadevi Caves add natural grandeur.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Kurnool</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Jul — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="15.8513" data-map-lng="78.8687" data-map-name="Srisailam Temple">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=15.8513,78.8687" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Gandikota -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Gandikota Grand Canyon India" data-category="adventure">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #8B4513 0%, #CD853F 50%, #DEB887 100%);">
+                <i class="bi bi-mountain" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Adventure</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Gandikota — Grand Canyon of India</h3>
+              <p class="place-card-desc">
+                A hidden gem where the Pennar River carves through a stunning gorge of red sandstone cliffs. The ancient Gandikota Fort ruins and breathtaking sunrise views make this a must-visit.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Kadapa</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="15.2464" data-map-lng="78.2831" data-map-name="Gandikota Fort">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=15.2464,78.2831" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Belum Caves -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Belum Caves Underground" data-category="adventure">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #2c2c54 0%, #474787 50%, #aaa69d 100%);">
+                <i class="bi bi-gem" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Adventure</span>
+              <span class="place-card-price">₹65</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Belum Caves</h3>
+              <p class="place-card-desc">
+                India's longest naturally-formed cave system stretching 3.5 km underground. Discover mesmerizing stalactites, stalagmites, and ancient Buddhist meditation chambers.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Kurnool</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Jun — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹65</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="15.1005" data-map-lng="78.1067" data-map-name="Belum Caves">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=15.1005,78.1067" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Horsley Hills -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Horsley Hills Hill Station" data-category="hill station">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #1b4332 0%, #52b788 50%, #d8f3dc 100%);">
+                <i class="bi bi-cloud-sun" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Hill Station</span>
+              <span class="place-card-price">₹30</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Horsley Hills</h3>
+              <p class="place-card-desc">
+                A serene hill station at 1,265m elevation named after W.D. Horsley. Known for its pleasant climate year-round, eucalyptus forests, and panoramic viewpoints overlooking Rayalaseema.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Madanapalle</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Sep — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹30</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="13.6604" data-map-lng="78.3975" data-map-name="Horsley Hills">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=13.6604,78.3975" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Konaseema -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Konaseema Backwaters Godavari" data-category="backwaters">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #006d77 0%, #83c5be 50%, #edf6f9 100%);">
+                <i class="bi bi-tsunami" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Backwaters</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Konaseema</h3>
+              <p class="place-card-desc">
+                Called the "God's Own Creation" — the Godavari Delta's emerald green backwaters, coconut groves, and serene boat rides through lush mangrove forests. Andhra's answer to Kerala.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Amalapuram</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="16.5790" data-map-lng="81.7253" data-map-name="Konaseema, Amalapuram">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=16.5790,81.7253" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Ahobilam -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Ahobilam Narasimha Temple" data-category="pilgrimage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #3d0066 0%, #9b2335 50%, #ff6b35 100%);">
+                <i class="bi bi-fire" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Pilgrimage & Trekking</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Ahobilam</h3>
+              <p class="place-card-desc">
+                A sacred pilgrimage with 9 Narasimha temples spread across dense Nallamala forests and rugged hills. The trek to upper Ahobilam through wilderness is both spiritual and thrilling.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Kurnool</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="15.4822" data-map-lng="78.7292" data-map-name="Ahobilam Temple">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=15.4822,78.7292" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Undavalli Caves -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Undavalli Caves Heritage" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #6b4226 0%, #b87d4b 50%, #f5d5a0 100%);">
+                <i class="bi bi-columns-gap" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">₹25</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Undavalli Caves</h3>
+              <p class="place-card-desc">
+                A stunning 4th-5th century rock-cut cave complex with four levels, featuring a massive monolithic reclining Vishnu statue. A masterpiece of ancient Indian rock architecture.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Vijayawada</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹25</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="16.4937" data-map-lng="80.5781" data-map-name="Undavalli Caves, Vijayawada">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=16.4937,80.5781" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Borra Caves -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Borra Caves Stalactites Nature" data-category="nature">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #1b263b 0%, #415a77 50%, #778da9 100%);">
+                <i class="bi bi-droplet-half" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Nature</span>
+              <span class="place-card-price">₹60</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Borra Caves</h3>
+              <p class="place-card-desc">
+                The deepest caves in India at 80m, located in the Ananthagiri Hills. Million-year-old stalactites and stalagmites form surreal shapes — Shiva Lingams, human faces, and natural pillars.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Araku, Vizag</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹60</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="18.2820" data-map-lng="83.0369" data-map-name="Borra Caves">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=18.2820,83.0369" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults">
+        <i class="bi bi-search d-block"></i>
+        <h4>No destinations found</h4>
+        <p>Try a different search term or filter category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOD SECTION ===== -->
+  <section class="section" id="food-section" style="background: var(--dark-card);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">🔥 Must-Eat Andhra Food</span>
+        <h2 class="section-title">Taste the <span>Fire</span> of Andhra</h2>
+        <p class="section-subtitle">
+          Andhra cuisine is legendary — fiery, tangy, and soul-satisfying. Here are 8 iconic dishes you must try.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Replace each image src with your own food photo -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-pulihora.png" alt="Pulihora - Tamarind Rice" class="food-card-img" />
+              <span class="food-emoji-overlay">🍚</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Pulihora</h4>
+              <p class="food-desc">Tangy tamarind rice seasoned with peanuts, curry leaves, and mustard — a festival staple that explodes with flavor in every bite.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-gongura-pachadi.png" alt="Gongura Pachadi" class="food-card-img" />
+              <span class="food-emoji-overlay">🌿</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Gongura Pachadi</h4>
+              <p class="food-desc">The signature Andhra chutney made from sorrel leaves. Tangy, spicy, and addictive — locals say a meal without gongura is incomplete.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-pesarattu.png" alt="Pesarattu - Green Moong Dosa" class="food-card-img" />
+              <span class="food-emoji-overlay">🥞</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Pesarattu</h4>
+              <p class="food-desc">Crispy green moong dal dosa served with ginger chutney and upma — the iconic Andhra breakfast that fuels millions every morning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-ragi-mudda.png" alt="Ragi Mudda - Finger Millet Ball" class="food-card-img" />
+              <span class="food-emoji-overlay">🫓</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Ragi Mudda</h4>
+              <p class="food-desc">Rayalaseema's soul food — finger millet balls served with fiery natukodi (country chicken) or tangy pulusu curries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-ulavacharu.png" alt="Ulavacharu - Horse Gram Soup" class="food-card-img" />
+              <span class="food-emoji-overlay">🍲</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Ulavacharu</h4>
+              <p class="food-desc">Rich horse gram lentil soup slow-cooked with spices — the ultimate comfort food that warms your soul on rainy evenings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-punugulu.png" alt="Punugulu - Fried Rice Batter Fritters" class="food-card-img" />
+              <span class="food-emoji-overlay">🧆</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Punugulu</h4>
+              <p class="food-desc">Golden deep-fried rice batter fritters — crispy outside, fluffy inside. The perfect tea-time snack paired with coconut chutney.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-bobbatlu.png" alt="Bobbatlu - Sweet Stuffed Flatbread" class="food-card-img" />
+              <span class="food-emoji-overlay">🥙</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Bobbatlu (Puri)</h4>
+              <p class="food-desc">Sweet stuffed flatbread filled with chana dal and jaggery — a festive dessert that melts in your mouth with ghee.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ap-natu-kodi-pulusu.png" alt="Natu Kodi Pulusu - Country Chicken Curry" class="food-card-img" />
+              <span class="food-emoji-overlay">🍗</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Natu Kodi Pulusu</h4>
+              <p class="food-desc">Country chicken curry cooked with tamarind and fiery red chilies — Andhra's most beloved non-veg dish, best with steamed rice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA: EXPLORE TELANGANA ===== -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="reveal">
+        <span class="section-badge">Next Stop</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">Continue to <span>Telangana</span></h2>
+        <p class="section-subtitle" style="margin-bottom: 36px;">
+          Discover the city of pearls, grand Golconda, and the world-famous Hyderabadi Biryani.
+        </p>
+        <a href="telangana.html" class="btn-primary-custom">
+          <i class="bi bi-arrow-right-circle me-2"></i> Explore Telangana
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <i class="bi bi-globe-asia-australia" style="-webkit-text-fill-color: var(--primary);"></i> South India Tourism
+          </div>
+          <p class="footer-desc">
+            Your ultimate guide to exploring the heritage, nature, and flavors of Andhra Pradesh & Telangana.
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="andhra-pradesh.html">Andhra Pradesh</a></li>
+            <li><a href="telangana.html">Telangana</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">AP Categories</h5>
+          <ul class="footer-links">
+            <li><a href="#">Pilgrimage</a></li>
+            <li><a href="#">Heritage & Caves</a></li>
+            <li><a href="#">Hill Stations</a></li>
+            <li><a href="#">Beaches & Backwaters</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-title">Quick Info</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-geo-alt me-1"></i> Andhra Pradesh, India</a></li>
+            <li><a href="#"><i class="bi bi-calendar me-1"></i> Best: Oct — Mar</a></li>
+            <li><a href="#"><i class="bi bi-translate me-1"></i> Telugu, English</a></li>
+            <li><a href="#"><i class="bi bi-currency-rupee me-1"></i> Budget Friendly</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 South India Tourism. Made with <i class="bi bi-heart-fill" style="color: var(--primary);"></i> by Kaisarlla Rama Sivaji | <a href="mailto:ramsivaji0@gmail.com" style="color: inherit; text-decoration: underline;">ramsivaji0@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MAP MODAL ===== -->
+  <div class="modal fade map-modal" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">Location</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="mapFrame" src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="directionsLink" target="_blank" class="btn-primary-custom" style="padding: 10px 28px; font-size: 0.9rem;">
+            <i class="bi bi-signpost-2 me-1"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

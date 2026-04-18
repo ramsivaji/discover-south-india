@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telangana — Explore 12 Stunning Destinations | South India Tourism</title>
+  <meta name="description" content="Discover 12 breathtaking destinations in Telangana — from the iconic Charminar and Golconda Fort to serene Laknavaram Lake. Explore Nizam heritage, Kakatiya glory, and legendary Hyderabadi cuisine." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-globe-asia-australia"></i> South India
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="andhra-pradesh.html">Andhra Pradesh</a></li>
+          <li class="nav-item"><a class="nav-link active" href="telangana.html">Telangana</a></li>
+          <li class="nav-item"><a class="nav-link" href="#food-section">Local Food</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== STATE HERO ===== -->
+  <section class="state-hero" id="ts-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1" style="background: #6a3093;"></div>
+      <div class="hero-orb hero-orb-2" style="background: #FFD700;"></div>
+      <div class="hero-orb hero-orb-3" style="background: #FF6B35; opacity: 0.15;"></div>
+    </div>
+    <div class="container">
+      <div class="state-hero-content">
+        <div class="hero-badge">💎 The City of Pearls & Beyond</div>
+        <h1 class="state-hero-title">
+          <span class="gradient-text">Telangana</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width: 700px;">
+          From the bustling lanes of Charminar and the majestic Golconda Fort to the serene Kakatiya heritage of Warangal — discover a state where Nizam grandeur meets ancient glory and world-famous cuisine.
+        </p>
+        <div class="state-hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Destinations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Local Foods</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Memories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS SECTION ===== -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Top Destinations</span>
+        <h2 class="section-title">Explore <span>Telangana</span></h2>
+        <p class="section-subtitle">
+          Discover 12 incredible destinations — from Nizam-era monuments to hidden natural gems.
+        </p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container reveal">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search destinations..." />
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+        <button class="filter-btn" data-filter="hill station">Hill Station</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+      </div>
+
+      <!-- Place Cards Grid -->
+      <div class="row g-4" id="placesGrid">
+
+        <!-- 1. Charminar -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Charminar Old City Hyderabad" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #0d1117 0%, #6a3093 50%, #FFD700 100%);">
+                <i class="bi bi-building" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">₹25</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Charminar & Old City</h3>
+              <p class="place-card-desc">
+                The iconic symbol of Hyderabad — four grand minarets rising above the bustling Laad Bazaar. Built in 1591 by Quli Qutb Shah, it's the heart of Hyderabad's old-world charm, bangles, and biryani.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Hyderabad</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹25</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.3616" data-map-lng="78.4747" data-map-name="Charminar, Hyderabad">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.3616,78.4747" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Golconda Fort -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Golconda Fort Hyderabad" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #2c2c54 0%, #706fd3 50%, #cf6a87 100%);">
+                <i class="bi bi-shield" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">₹15</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Golconda Fort</h3>
+              <p class="place-card-desc">
+                A magnificent 13th-century fort famous for its acoustic marvel — a hand clap at the entrance can be heard at the hilltop. Once the diamond capital of the world and home to the legendary Kohinoor.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Hyderabad</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹15</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.3833" data-map-lng="78.4011" data-map-name="Golconda Fort, Hyderabad">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.3833,78.4011" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Ramoji Film City -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Ramoji Film City Entertainment" data-category="entertainment">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #e74c3c 0%, #f39c12 50%, #1abc9c 100%);">
+                <i class="bi bi-camera-reels" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Entertainment</span>
+              <span class="place-card-price">₹1,500+</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Ramoji Film City</h3>
+              <p class="place-card-desc">
+                The world's largest film studio complex (certified by Guinness World Records), spread over 1,666 acres. Themed gardens, live shows, film sets, adventure zones, and behind-the-scenes movie magic.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Hyderabad</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Year Round</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹1,500+</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.2543" data-map-lng="78.6808" data-map-name="Ramoji Film City, Hyderabad">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.2543,78.6808" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Warangal Fort & 1000 Pillar Temple -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Warangal Fort 1000 Pillar Temple Kakatiya" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #5c4033 0%, #a67c52 50%, #f5deb3 100%);">
+                <i class="bi bi-columns" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">₹15</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Warangal Fort & 1000 Pillar Temple</h3>
+              <p class="place-card-desc">
+                The glorious Kakatiya dynasty capital with its iconic four ornamental gateways (Kakatiya Thoranam). The 1000 Pillar Temple is a masterwork of Chalukyan architecture with intricate carvings.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Warangal</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹15</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.9565" data-map-lng="79.9946" data-map-name="Warangal Fort">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.9565,79.9946" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Nagarjuna Sagar Dam -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Nagarjuna Sagar Dam Nature" data-category="nature">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #004e92 0%, #0077b6 50%, #90e0ef 100%);">
+                <i class="bi bi-water" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Nature</span>
+              <span class="place-card-price">₹20</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Nagarjuna Sagar Dam</h3>
+              <p class="place-card-desc">
+                One of the world's tallest masonry dams on the mighty Krishna River. The enormous reservoir, island museum showcasing Buddhist relics (Nagarjunakonda), and stunning spillway views are awe-inspiring.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Nalgonda</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Jul — Jan</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹20</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="16.5730" data-map-lng="79.3133" data-map-name="Nagarjuna Sagar Dam">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=16.5730,79.3133" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Medak Cathedral -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Medak Cathedral Church" data-category="heritage">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 50%, #ecf0f1 100%);">
+                <i class="bi bi-hospital" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Medak Cathedral</h3>
+              <p class="place-card-desc">
+                Asia's second-largest church with stunning stained glass windows, Gothic architecture, and a bell that was once the largest in India. A colonial-era masterpiece built atop a hill.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Medak</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Oct — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="18.0527" data-map-lng="78.2618" data-map-name="Medak Cathedral">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=18.0527,78.2618" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Pochampally -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Pochampally Ikat Weaving Culture" data-category="culture">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #8e44ad 0%, #e74c3c 50%, #f1c40f 100%);">
+                <i class="bi bi-palette" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Culture</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Pochampally — Silk Village</h3>
+              <p class="place-card-desc">
+                UNESCO-recognized for its traditional Ikat weaving. Watch artisans create world-famous Pochampally silk sarees with intricate geometric patterns in this living heritage village.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Nalgonda</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Year Round</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.3441" data-map-lng="78.8235" data-map-name="Pochampally Village">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.3441,78.8235" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Ananthagiri Hills -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Ananthagiri Hills Hill Station Vikarabad" data-category="hill station">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #134e5e 0%, #71b280 50%, #c6f1d6 100%);">
+                <i class="bi bi-tree" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Hill Station</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Ananthagiri Hills</h3>
+              <p class="place-card-desc">
+                Hyderabad's favorite weekend escape — lush green hills, misty mornings, trekking trails, and waterfalls. The ancient Anantha Padmanabha Swamy Temple adds a spiritual touch to the adventure.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Vikarabad</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Jul — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.2280" data-map-lng="78.2379" data-map-name="Ananthagiri Hills, Vikarabad">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.2280,78.2379" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Laknavaram Lake -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Laknavaram Lake Warangal Nature" data-category="nature">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #006d77 0%, #83c5be 50%, #edf6f9 100%);">
+                <i class="bi bi-tsunami" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Nature</span>
+              <span class="place-card-price">₹30</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Laknavaram Lake</h3>
+              <p class="place-card-desc">
+                A stunning man-made lake surrounded by 13 emerald green hillocks. Cross the famous floating bridge, kayak through crystal-clear waters, and camp under starlit skies in pure tranquility.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Warangal</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Aug — Mar</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> ₹30</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="18.1088" data-map-lng="79.9816" data-map-name="Laknavaram Lake, Warangal">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=18.1088,79.9816" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Pillalamarri -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Pillalamarri Banyan Tree Mahabubnagar" data-category="nature">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #2d6a4f 0%, #52b788 50%, #b7e4c7 100%);">
+                <i class="bi bi-tree" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Nature</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Pillalamarri — 700-Year Banyan</h3>
+              <p class="place-card-desc">
+                One of the oldest and largest banyan trees in Asia, covering over 3 acres with its sprawling aerial roots. This 700-year-old natural wonder is a living testament to nature's grandeur.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Mahabubnagar</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Year Round</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="16.7400" data-map-lng="78.1000" data-map-name="Pillalamarri Banyan Tree">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=16.7400,78.1000" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Kuntala Waterfalls -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Kuntala Waterfalls Adilabad" data-category="nature">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #caf0f8 100%);">
+                <i class="bi bi-droplet" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Nature</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Kuntala Waterfalls</h3>
+              <p class="place-card-desc">
+                Telangana's highest waterfall cascading 200 feet in two tiers through dense Sahyadri forests. The monsoon transforms it into a thundering spectacle surrounded by pristine wilderness.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Adilabad</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Jul — Nov</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="19.5155" data-map-lng="78.5596" data-map-name="Kuntala Waterfalls, Adilabad">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=19.5155,78.5596" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Bhongir Fort -->
+        <div class="col-md-6 col-lg-4">
+          <div class="place-card reveal" data-name="Bhongir Fort Adventure Trekking" data-category="adventure">
+            <div class="place-card-img-wrapper">
+              <div class="img-placeholder place-card-img" style="background: linear-gradient(135deg, #4a4e69 0%, #9a8c98 50%, #c9ada7 100%);">
+                <i class="bi bi-flag" style="font-size: 3rem; color: rgba(255,255,255,0.25);"></i>
+              </div>
+              <span class="place-card-category">Heritage & Adventure</span>
+              <span class="place-card-price">Free</span>
+            </div>
+            <div class="place-card-body">
+              <h3 class="place-card-title">Bhongir Fort</h3>
+              <p class="place-card-desc">
+                An exhilarating hilltop fort built on a massive monolithic rock. The challenging climb rewards you with 360° panoramic views. A favorite weekend trek for Hyderabadis seeking adventure.
+              </p>
+              <div class="place-card-meta">
+                <span><i class="bi bi-geo-alt"></i> Bhongir</span>
+                <span class="best-time"><i class="bi bi-calendar"></i> Sep — Feb</span>
+                <span class="ticket-info"><i class="bi bi-ticket"></i> Free</span>
+              </div>
+              <div class="place-card-actions">
+                <button class="btn-map" data-map-lat="17.5131" data-map-lng="78.8875" data-map-name="Bhongir Fort">
+                  <i class="bi bi-map"></i> View Map
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.5131,78.8875" target="_blank" class="btn-directions">
+                  <i class="bi bi-sign-turn-right"></i> Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults">
+        <i class="bi bi-search d-block"></i>
+        <h4>No destinations found</h4>
+        <p>Try a different search term or filter category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOD SECTION ===== -->
+  <section class="section" id="food-section" style="background: var(--dark-card);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">🍽️ Must-Eat Telangana Food</span>
+        <h2 class="section-title">Taste the <span>Royal</span> Flavors</h2>
+        <p class="section-subtitle">
+          Telangana cuisine is a glorious blend of Nizam-era Mughlai richness and earthy Telugu flavors. Here are 8 iconic dishes you must try.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Replace each image src with your own food photo -->
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-hyderabadi-biryani.png" alt="Hyderabadi Biryani" class="food-card-img" />
+              <span class="food-emoji-overlay">🍚</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Hyderabadi Biryani</h4>
+              <p class="food-desc">The world-famous dum biryani — fragrant basmati rice layered with spiced meat, slow-cooked in a sealed handi. Every grain tells a story of 400 years of culinary legacy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-haleem.png" alt="Haleem" class="food-card-img" />
+              <span class="food-emoji-overlay">🥘</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Haleem</h4>
+              <p class="food-desc">The iconic Ramadan delicacy — slow-cooked wheat, lentils, and meat blended into a rich, velvety stew. Garnished with fried onions, lemon, and fresh mint.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-sarva-pindi.png" alt="Sarva Pindi" class="food-card-img" />
+              <span class="food-emoji-overlay">🫓</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Sarva Pindi</h4>
+              <p class="food-desc">A rustic dry rice flour pancake studded with peanuts, sesame seeds, and curry leaves — the quintessential Telangana breakfast that's crunchy and irresistible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-sakinalu.png" alt="Sakinalu" class="food-card-img" />
+              <span class="food-emoji-overlay">🥨</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Sakinalu</h4>
+              <p class="food-desc">Crispy spiral rice snacks made during Sankranti festival. These handcrafted, deep-fried rings are a labor of love — crunchy, aromatic, and deeply traditional.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-jonna-rotte.png" alt="Jonna Rotte" class="food-card-img" />
+              <span class="food-emoji-overlay">🫓</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Jonna Rotte</h4>
+              <p class="food-desc">Traditional jowar (sorghum) flatbread — thick, hearty, and served piping hot with tangy tomato curry or spicy meat dishes. A Telangana farmer's pride.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-golichina-mamsam.png" alt="Golichina Mamsam" class="food-card-img" />
+              <span class="food-emoji-overlay">🍖</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Golichina Mamsam</h4>
+              <p class="food-desc">Spicy dry-fried mutton tossed with curry leaves, green chilies, and aromatic Telangana spices. The name literally means "stirred meat" — and it's pure magic.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-qubani-ka-meetha.png" alt="Qubani Ka Meetha" class="food-card-img" />
+              <span class="food-emoji-overlay">🍑</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Qubani Ka Meetha</h4>
+              <p class="food-desc">A luxurious Nizam-era dessert — dried apricots slow-cooked into a rich compote, crowned with fresh cream. The sweet legacy of Hyderabad's royal kitchens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="food-card">
+            <div class="food-card-img-wrapper">
+              <img src="images/food/ts-double-ka-meetha.png" alt="Double Ka Meetha" class="food-card-img" />
+              <span class="food-emoji-overlay">🍞</span>
+            </div>
+            <div class="food-card-content">
+              <h4 class="food-name">Double Ka Meetha</h4>
+              <p class="food-desc">Hyderabadi bread pudding — slices of bread fried golden, soaked in saffron-infused sweet milk, and garnished with nuts. A decadent end to any Hyderabadi feast.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA: EXPLORE AP ===== -->
+  <section class="section">
+    <div class="container text-center">
+      <div class="reveal">
+        <span class="section-badge">Explore More</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">Discover <span>Andhra Pradesh</span></h2>
+        <p class="section-subtitle" style="margin-bottom: 36px;">
+          Dive into divine temples, the Grand Canyon of India, pristine beaches, and the spiciest cuisine on Earth.
+        </p>
+        <a href="andhra-pradesh.html" class="btn-primary-custom">
+          <i class="bi bi-compass me-2"></i> Explore Andhra Pradesh
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <i class="bi bi-globe-asia-australia" style="-webkit-text-fill-color: var(--primary);"></i> South India Tourism
+          </div>
+          <p class="footer-desc">
+            Your ultimate guide to exploring the heritage, nature, and flavors of Andhra Pradesh & Telangana.
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="andhra-pradesh.html">Andhra Pradesh</a></li>
+            <li><a href="telangana.html">Telangana</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">TS Categories</h5>
+          <ul class="footer-links">
+            <li><a href="#">Heritage & Forts</a></li>
+            <li><a href="#">Nature & Lakes</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Culture & Art</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-title">Quick Info</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-geo-alt me-1"></i> Telangana, India</a></li>
+            <li><a href="#"><i class="bi bi-calendar me-1"></i> Best: Oct — Mar</a></li>
+            <li><a href="#"><i class="bi bi-translate me-1"></i> Telugu, Urdu, English</a></li>
+            <li><a href="#"><i class="bi bi-currency-rupee me-1"></i> Budget Friendly</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 South India Tourism. Made with <i class="bi bi-heart-fill" style="color: var(--primary);"></i> by Kaisarlla Rama Sivaji | <a href="mailto:ramsivaji0@gmail.com" style="color: inherit; text-decoration: underline;">ramsivaji0@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MAP MODAL ===== -->
+  <div class="modal fade map-modal" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">Location</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="mapFrame" src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="directionsLink" target="_blank" class="btn-primary-custom" style="padding: 10px 28px; font-size: 0.9rem;">
+            <i class="bi bi-signpost-2 me-1"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
